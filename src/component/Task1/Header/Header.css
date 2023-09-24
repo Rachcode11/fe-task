@@ -1,0 +1,42 @@
+body {
+    padding: 2rem;
+}
+
+.header_container {
+    display: flex;
+    height: 80px;
+    width: 70%;
+    justify-content: flex-start;
+    text-align: center;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.headerTab_container {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+}
+.headerTab_content {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    justify-self: center;
+}
+.headerTab_content.activeTab {
+    background-color: #00635b;
+    width: 100%;
+    color: white;
+}
+
+.divide {
+    font-size: 4rem;
+    margin-top: 1rem;
+    font-weight: bolder;
+    color: red;
+}
+
+
+
+
+
+
+
