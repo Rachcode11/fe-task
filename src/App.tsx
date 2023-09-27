@@ -1,11 +1,12 @@
 import React from 'react';
-import Header from "./component/Task1/Header/Header";
+import ApplicationForm from "./component/Task1/Main/Task1/ApplicationForm";
+import Sidebar from "./component/Task1/Sidebar/Sidebar";
 
 
 function App() {
   return (
     <div className="App">
-      <Header/>
+        <Sidebar/>
     </div>
   );
 }

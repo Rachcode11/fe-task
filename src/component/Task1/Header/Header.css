@@ -1,14 +1,19 @@
-body {
-    padding: 2rem;
+.main{
+    margin-top: 6rem;
+    width: 100%;
 }
 
 .header_container {
     display: flex;
-    height: 80px;
-    width: 70%;
+    height: 100px;
+    width: 80%;
     justify-content: flex-start;
     text-align: center;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+.headerTab_content span{
+    text-align: center;
+    margin-top: 2rem;
 }
 
 .headerTab_container {
@@ -25,7 +30,20 @@ body {
     background-color: #00635b;
     width: 100%;
     color: white;
+    position: relative;
 }
+
+.headerTab_content.activeTab:after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    left: 232px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #00635b transparent;
+    transform: translateX(-50%) rotate(90deg);
+}
+
 
 .divide {
     font-size: 4rem;
@@ -33,6 +51,7 @@ body {
     font-weight: bolder;
     color: red;
 }
+
 
 
 

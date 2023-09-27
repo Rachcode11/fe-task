@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Upload = () => {
+const Dropdown = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Upload = () => {
     );
 };
 
-export default Upload;
+export default Dropdown;
