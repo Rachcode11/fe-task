@@ -18,36 +18,38 @@ const PersonalInfo = ({open, onClose}: any) => {
             openSuccess(true);
         }
     }
-    // useEffect(()=>{
-    //     getRequest();
-    //
-    // },[])
-    //
-    //
-    // const getRequest =()=>{
-    //     try{
-    //         const url = "http://127.0.0.1:4010/api/902.2330733792203/programs/df293244-bfbc-614a-f15a-03fb97405e04/application-form"
-    //         const requestOption ={
-    //             method: 'GET',
-    //             headers:{
-    //                 'content-type':'application/json'
-    //             }
-    //         }
-    //
-    //         const Fetch = async() =>{
-    //             const response = await fetch(url, requestOption);
-    //             return response;
-    //         }
-    //         Fetch().then((res)=> res.json().then((res)=>{
-    //             console.log(res.data.attributes.personalInformation, 'res')
-    //             const data  = res.data.attributes.personalInformation
-    //             console.log("dat", data)
-    //             // setProfileDate()
-    //         }))
-    //     }catch (e) {
-    //
-    //     }
-    // }
+    useEffect(()=>{
+        getRequest();
+
+    },[])
+
+
+    const getRequest = async () => {
+        try {
+            const url = "http://127.0.0.1:4010/api/902.2330733792203/programs/df293244-bfbc-614a-f15a-03fb97405e04/application-form";
+            const requestOptions = {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            };
+
+            const response = await fetch(url, requestOptions);
+
+            if (!response.ok) {
+                throw new Error(`Network response was not ok: ${response.status}`);
+            }
+
+            const data = await response.json();
+            console.log('Data:', data);
+
+        } catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    };
+
+    getRequest();
+
 
     const onChange = (e: CheckboxChangeEvent) => {
         console.log(`checked = ${e.target.checked}`);
