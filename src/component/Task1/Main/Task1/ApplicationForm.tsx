@@ -1,10 +1,16 @@
 import React from 'react';
-import Input from "./ReusableComponent/Input";
+import UploadAndDisplayImage from "./Upload/UploadAndDisplayImage";
+import PersonalInfo from "./PersonalInfo/PersonalInfo";
+import Profile from "./Profile/Profile";
+import AdditionalQuest from "./AdditionalQuest/AdditionalQuest";
 
 const ApplicationForm = () => {
     return (
         <div>
-            <Input label="Question" placeholder="Type Here ..."/>
+            <UploadAndDisplayImage/>
+            <PersonalInfo/>
+            <Profile/>
+            <AdditionalQuest/>
         </div>
     );
 };

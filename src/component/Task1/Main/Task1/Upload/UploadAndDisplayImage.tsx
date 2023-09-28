@@ -31,7 +31,10 @@ const UploadAndDisplayImage = () => {
                         <h3>Upload Cover Image</h3>
                     </div>
                     <div className="form_contain">
-                        <form action="" onClick={handleClick}>
+                        <form action="" onClick={handleClick} style={{
+                            marginLeft: "-18px",
+                            marginTop: "-13px",
+                        }}>
                             <input
                                 type="file"
                                 accept="image/*"

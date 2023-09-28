@@ -1,10 +1,9 @@
 .main_container{
-    padding: 4rem;
+    padding: 2rem;
 }
 .close{
     display: flex;
     gap: 2px;
-    background-color: white;
     width: 400px;
     border-radius: 0 0 10px 10px;
     margin-top: -3px;
@@ -35,13 +34,15 @@ form{
     align-items: center;
 
 }
+.cover_contain{
+    width: 76%;
+}
 .cover_contain h3{
     background-color: #a7fcfc;
     width: 500px;
     height: 50px;
     padding: 2rem;
     font-family: Roboto, sans-serif;
-    font-family: 1rem;
     margin: 0;
     border-radius: 10px 10px 0 0;
 }

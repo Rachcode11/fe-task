@@ -1,10 +1,6 @@
 import React from 'react';
 import "../../Task1/PersonalInfo/profileInfo.css"
 
-// type IProps = {
-//     placeholder?: string;
-//     label?: string;
-// }
 
 const Input = ({label,placeholder}: any) => {
     return (

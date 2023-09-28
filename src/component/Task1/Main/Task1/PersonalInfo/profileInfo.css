@@ -23,9 +23,10 @@
 }
 .personal-input{
     border: none;
-    width: 252px;
     background-color: transparent;
     font-size: 20px;
+    width: 100%;
+
 }
 .personal-input:focus{
     outline: none;
@@ -34,6 +35,10 @@
     color: black;
     font-size: 15px;
     font-family: Roboto, serif;
+    max-width: 100%; /* Set the maximum width */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflowed text */
+    white-space: nowrap;
 }
 
 .show{
@@ -42,14 +47,12 @@
 .hide{
     display: flex;
 }
-.input{
-    padding: 2rem;
-}
+
 .input-case{
     margin-top: 1rem;
 }
 .nonVisibleInput{
-    width: 25%;
+    width: 100%;
     border-radius: 5px;
     height: 6vh;
 }
@@ -58,5 +61,8 @@
 }
 .input-label{
     font-family: Roboto, sans-serif;
-    
+}
+.profile{
+    display: flex;
+    justify-content: space-between;
 }
